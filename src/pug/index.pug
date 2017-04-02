@@ -43,16 +43,16 @@ block content
             br
             | 12:00
           td
-          td
+          td.detail
             | 課程
             br
             | 爬蟲教學
-          td 校外參訪
-          td
+          td.detail 校外參訪
+          td.detail
             | 課程
             br
             | 網頁教學
-          td
+          td.detail
             | 課程
             br
             | 網頁教學
@@ -73,12 +73,15 @@ block content
             br
             | 15:00
           td 相見歡
-          td
+          td.detail
             | 課程
             br
             |  爬蟲教學
           td 大地遊戲
-          td 專題演講
+          td.detail
+            | 專題演講
+            br
+            | 
           td 水大地
         tr
           td
@@ -87,7 +90,7 @@ block content
             | ~
             br
             | 18:00
-          td 
+          td.detail
             | 專題演講
             br
             | 主任演講
@@ -130,7 +133,7 @@ block content
         .col-xs-6
           p 招生人數
         .col-xs-6
-          p 54至66人
+          p 66人
         .col-xs-6
           p 活動地點
         .col-xs-6
@@ -143,17 +146,19 @@ block content
       p
         | 若要報名至下方連結填寫資料
         a(href='#', target='_blank') 繳費說明
-      button.btn.btn-block(href='#', target='_blank', role='button') 我要報名
-      h2 注意事項
-      ul
-        li 活動費用包含食宿、保險、講師費、材料費、營服等。
-        li
-          | 退費相關問題請見
-          a(href='#', target='_blank') 繳費說明
-        li 後續通知及行前注意事項均將透過學員填寫之電子信箱聯繫，請務必保持收信以免影響個人權益。
-        li 若營隊因營期前發生不可抗拒天然災害(颱風、地震等)而無法舉辦，本營隊將退費50%(扣除訂金問題及相關食宿、保險、手冊等營期間使用費用，以及營服、紀念品製作費用。)，而小隊員將會收到營服及營隊紀念品。
-      h2 聯絡資訊
+      .apply-link
+        a(href='#', target='_blank') 我要報名
+      .note-info
+        h2 注意事項
+        ul
+          li 活動費用包含食宿、保險、講師費、材料費、營服等。
+          li
+            | 退費相關問題請見
+            a(href='#', target='_blank') 繳費說明
+          li 後續通知及行前注意事項均將透過學員填寫之電子信箱聯繫，請務必保持收信以免影響個人權益。
+          li 若營隊因營期前發生不可抗拒天然災害(颱風、地震等)而無法舉辦，本營隊將退費50%(扣除訂金問題及相關食宿、保險、手冊等營期間使用費用，以及營服、紀念品製作費用。)，而小隊員將會收到營服及營隊紀念品。
       .contact-info
+        h2 聯絡資訊
         p
           span.glyphicon.glyphicon-envelope
           | E-mail: haha80086@gmail.com
@@ -161,12 +166,26 @@ block content
           span.glyphicon.glyphicon-earphone
           | Phone: 0988-356-143(林先生)
 
-
     #admission
       h1 錄取團員
     #sponsor
-      
+      h1 主辦單位
+      .row.sponsor-info
+        .col-sm-6.col-xs-12
+          .logo
+            img(src='./img/nchucselogo_1.png')
+            h3 中興大學資工系學會
+      h1 協辦單位
+      .row.sponsor-info
+        .col-sm-6.col-xs-12
+          .logo
+            img(src='./img/nchucselogo_2.png')
+            h3 中興大學資工系
+        .col-sm-6.col-xs-12
+          .logo
+            img(src='./img/nchuitlogo.png')
+            h3 中興大學資訊社
 block append js
   script(type='text/javascript', src='./js/lib/particles.min.js')
-  script(type='text/javascript', src='./js/lib/typewriter.min.js')
+  script(type='text/javascript', src='./js/lib/typed.min.js')
   script(src='./js/main.js')
