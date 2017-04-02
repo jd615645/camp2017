@@ -41,11 +41,11 @@ ul {
   z-index: -1;
 }
 #main {
-  height: 500vh;
   width: 100vw;
 }
 #home, #about, #timetable, #apply, #admission, #sponsor {
-  height: 100vh;
+  // height: 100vh;
+  padding: 150px 0px 200px;
   width: 70vw;
 
   display: flex;
@@ -55,6 +55,7 @@ ul {
   margin: 0 auto;
 }
 #home {
+  height: 100vh;
   #logo {
     width: 500px;
   }
@@ -175,5 +176,13 @@ ul {
 @media screen and (max-width: 767px) {
   #home, #about, #timetable, #apply, #admission, #sponsor {
     width: 90vw;
+    padding: 50px 0px 100px;
+  }
+  p, li {
+    text-align: justify;
+    font-size: 1.2em;
+  }
+  #home #logo {
+    width: 300px;
   }
 }
