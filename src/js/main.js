@@ -1,13 +1,5 @@
-var vm = new Vue({
-  el: '#app',
-  data() {
-    return {
-      
-    }
-  },
-  mounted() {
-    
-  },
-  methods: {
-  }
-})
+$(document).ready(function() {
+  particlesJS.load('bg', '../json/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+});

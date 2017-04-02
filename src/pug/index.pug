@@ -2,6 +2,171 @@ extends layout
 block style
   link(rel='stylesheet', href='./style/main.css')
 block content
-  
+  #bg
+  #main
+    #home
+      img#logo(src='./img/logo.png')
+    #about
+      h1 關於資工營
+      .article
+        p 近年來資訊科學成為現今各國極為重視的產業，生活中無處不能看到與資訊科學相關的產品，從人手一支的手機、電腦，到現在最夯的網頁設計及軟體製作、以及增加遊戲體驗的虛擬實境、甚至是前陣子橫掃圍棋界的人工智慧機器，都是資工系的範疇。
+        p 雖然社會早已跟資訊科學緊密結合，但卻依然十分常聽到一個問題：資工系到底在學甚麼？或者是對資工系有錯誤的認知，所以本系舉辦「2017中興資工營」，希望藉由此營隊，讓高中高職生能親自體會資工系都在玩些甚麼，學員們在這五天可以學到如何使用HTML寫出一個自己的網站、撰寫一隻爬蟲程式、並且親自實作電路，期望藉此來啟發高中學生對於資訊科學的興趣，為資訊科學領域培養未來的人才。
+      .row.camp-info
+        .col-md-3.col-sm-6.col-xs-12
+          h3 主辦單位
+          p 中興資工系學會
+        .col-md-3.col-sm-6.col-xs-12
+          h3 協辦單位
+          p 中興大學資工系
+          p 中興大學資訊社
+        .col-md-3.col-sm-6.col-xs-12
+          h3 活動時間
+          p 2017/07/08 ~ 2017/07/12
+        .col-md-3.col-sm-6.col-xs-12
+          h3 活動地點
+          p 國立中興大學
+    #timetable
+      h1 課程表
+      table
+        tr
+          th
+          th 07/08
+          th 07/09
+          th 07/10
+          th 07/11
+          th 07/12
+        tr
+          td
+            | 08:00
+            br
+            | ~
+            br
+            | 12:00
+          td
+          td
+            | 課程
+            br
+            | 爬蟲教學
+          td 校外參訪
+          td
+            | 課程
+            br
+            | 網頁教學
+          td
+            | 課程
+            br
+            | 網頁教學
+        tr
+          td
+            | 12:00
+            br
+            | ~
+            br
+            | 13:00
+          td 學員報到
+          td(colspan='4') 午餐時間
+        tr
+          td
+            | 13:00
+            br
+            | ~
+            br
+            | 15:00
+          td 相見歡
+          td
+            | 課程
+            br
+            |  爬蟲教學
+          td 大地遊戲
+          td 專題演講
+          td 水大地
+        tr
+          td
+            | 15:00
+            br
+            | ~
+            br
+            | 18:00
+          td 
+            | 專題演講
+            br
+            | 主任演講
+          td RPG
+          td 密室逃脫
+          td 全員逃走中
+          td 結業典禮
+        tr
+          td
+            | 18:00
+            br
+            | ~
+            br
+            | 19:00
+          td(colspan='4') 晚餐時間
+          td(rowspan='2') 賦歸
+        tr
+          td
+            | 19:00
+            br
+            | ~
+            br
+            | 21:00
+          td 食字路口
+          td 歡迎晚會
+          td 夜遊
+          td 感性時間
+
+    #apply
+      h1 報名
+      .row.apply-info
+        .col-xs-6
+          p 活動日期
+        .col-xs-6
+          p 2017/07/08 ~ 2017/07/12
+        .col-xs-6
+          p 活動對象
+        .col-xs-6
+          p 全國高中職一至三年級者
+        .col-xs-6
+          p 招生人數
+        .col-xs-6
+          p 54至66人
+        .col-xs-6
+          p 活動地點
+        .col-xs-6
+          p 國立中興大學
+        .col-xs-6
+          p 活動費用
+        .col-xs-6
+          p 1人新台幣 5200 元整
+          p 3人以上團報每人 4900 元整
+      p
+        | 若要報名至下方連結填寫資料
+        a(href='#', target='_blank') 繳費說明
+      button.btn.btn-block(href='#', target='_blank', role='button') 我要報名
+      h2 注意事項
+      ul
+        li 活動費用包含食宿、保險、講師費、材料費、營服等。
+        li
+          | 退費相關問題請見
+          a(href='#', target='_blank') 繳費說明
+        li 後續通知及行前注意事項均將透過學員填寫之電子信箱聯繫，請務必保持收信以免影響個人權益。
+        li 若營隊因營期前發生不可抗拒天然災害(颱風、地震等)而無法舉辦，本營隊將退費50%(扣除訂金問題及相關食宿、保險、手冊等營期間使用費用，以及營服、紀念品製作費用。)，而小隊員將會收到營服及營隊紀念品。
+      h2 聯絡資訊
+      .contact-info
+        p
+          span.glyphicon.glyphicon-envelope
+          | E-mail: haha80086@gmail.com
+        p
+          span.glyphicon.glyphicon-earphone
+          | Phone: 0988-356-143(林先生)
+
+
+    #admission
+      h1 錄取團員
+    #sponsor
+      
 block append js
+  script(type='text/javascript', src='./js/lib/particles.min.js')
+  script(type='text/javascript', src='./js/lib/typewriter.min.js')
   script(src='./js/main.js')

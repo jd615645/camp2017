@@ -10,7 +10,7 @@ var paths = {
     pug: './src/pug/*.pug',
     images: './src/img/*',
     data: './src/data/*',
-    font: './src/font/*'
+    json: './src/json/*'
   },
   dest: {
     html: './dest',
@@ -19,7 +19,7 @@ var paths = {
     js: './dest/js',
     images: './dest/img',
     data: './dest/data',
-    font: './dest/font'
+    json: './dest/json'
   }
 }
 
@@ -51,9 +51,9 @@ gulp.task('images', function () {
     .pipe(gulp.dest(paths.dest.images))
 })
 
-gulp.task('font', function () {
-  gulp.src(paths.src.font)
-    .pipe(gulp.dest(paths.dest.font))
+gulp.task('json', function () {
+  gulp.src(paths.src.json)
+    .pipe(gulp.dest(paths.dest.json))
 })
 
 gulp.task('data', function () {
@@ -83,4 +83,4 @@ gulp.task('watch', function () {
 })
 
 gulp.task('default', ['webserver', 'watch'])
-gulp.task('build', ['pug', 'less', 'css', 'theme', 'scripts', 'data', 'font'])
+gulp.task('build', ['pug', 'less', 'css', 'theme', 'scripts', 'data', 'json'])
