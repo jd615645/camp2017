@@ -43,19 +43,19 @@ block content
             br
             | 12:00
           td
-          td.detail
+          td.detail(value='noData')
             | 課程
             br
             | 爬蟲教學
-          td.detail
+          td.detail(value='noData')
             | 企業參訪
             br
             | 尊博科技股份有限公司
-          td.detail
+          td.detail(value='noData')
             | 課程
             br
             | 網頁教學
-          td.detail
+          td.detail(value='noData')
             | 課程
             br
             | 網頁教學
@@ -76,12 +76,12 @@ block content
             br
             | 15:00
           td 相見歡
-          td.detail
+          td.detail(value='noData')
             | 課程
             br
             |  爬蟲教學
           td 大地遊戲
-          td.detail
+          td.detail(value='speechBigData')
             | 專題演講
             br
             | 巨量資料系統平台
@@ -93,7 +93,7 @@ block content
             | ~
             br
             | 18:00
-          td.detail
+          td.detail(value='noData')
             | 專題演講
             br
             | 主任演講
@@ -191,6 +191,38 @@ block content
             a(href='http://nchuit.cc/', target='_blank')
               img(src='./img/nchuitlogo.png')
             h3 中興大學資訊社
+  #speechBigData.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', data-backdrop="true")
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') &times;
+          h4#myModalLabel.modal-title 巨量資料分析方法與應用 
+            small 陳倫奇 副研究員
+        .modal-body
+          p 單位: 財團法人國家實驗研究院國家高速網路與計算中心
+          p 簡介:
+            p 最近幾年巨量資料分析應用已廣泛運用到各領域並帶來實質的效益，包括: 
+              ul
+                li 商業智慧應用: 了解客戶需求提高營運效率
+                li 環境觀測應用: 環境監控與分析提早準備預防災害
+                li 智慧工廠應用: 機械設備歷史紀錄分析，找出關鍵生產效能/損壞因素，提升產能等。
+            p 
+              | 這些應用都是在現實生活中巨量資料分析所帶來的益處。 
+              br
+              | 近期巨量資料與人工智慧的應用更掀起另一波產業創新。
+              br
+              | 演講除介紹基礎巨量資料分析外，將挑選幾個巨量資料應用案例進行說明。
+  #noData.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', data-backdrop="true")
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') &times;
+          h4#myModalLabel.modal-title Hello, World!
+            small 
+        .modal-body
+          p 資料還沒更新，之後再回來察看喔！        
 block append js
   script(type='text/javascript', src='./js/lib/particles.min.js')
   script(type='text/javascript', src='./js/lib/typed.min.js')

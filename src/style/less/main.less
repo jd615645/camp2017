@@ -86,9 +86,44 @@ ul {
     &.detail {
       color: @hightlightColor;
       &:hover {
+        cursor:pointer;
         background-color: rgba(255, 255, 255, 0.2);
       }
     }
+  }
+}
+.modal {
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-dialog {
+    width: 80%;
+  }
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.92);
+  }
+  .modal-header {
+    border-bottom: none;
+    color: #196ec5;
+    small {
+      font-size: 80%;
+      color: #0b3c6f;
+    }
+  }
+  .modal-body {
+    font-size: 80% !important;  
+    p {
+      color: black;
+    }
+    li {
+      list-style-type: none;
+      color: black; 
+    }
+  }
+  .modal-footer {
+    border-top: none;
   }
 }
 #apply {
