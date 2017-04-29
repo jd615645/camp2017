@@ -49,13 +49,13 @@ block content
             | 爬蟲教學
           td.detail(value='noData')
             | 企業參訪
-            br
-            | 尊博科技股份有限公司
-          td.detail(value='noData')
+            //- br
+            //- | 尊博科技股份有限公司
+          td.detail(value='lessonWeb')
             | 課程
             br
             | 網頁教學
-          td.detail(value='noData')
+          td.detail(value='lessonWeb')
             | 課程
             br
             | 網頁教學
@@ -214,7 +214,31 @@ block content
               br
               | 近期巨量資料與人工智慧的應用更掀起另一波產業創新。
               br
-              | 演講除介紹基礎巨量資料分析外，將挑選幾個巨量資料應用案例進行說明。
+              | 演講除介紹基礎巨量資料分析外，將挑選幾個巨量資料應用案例進行說明。lessonWeb
+  #lessonWeb.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', data-backdrop="true")
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') &times;
+          h4#myModalLabel.modal-title 網頁的OOXX大小事 
+            br#breakline
+            span
+              small
+        .modal-body
+          p 單位: 
+            a(href='https://www.facebook.com/it.nchu', target='_blank') 中興大學 - 資訊科學研習社
+          p 簡介:
+            p
+              | 網路已是目前獲得資訊的重要媒介，透過網頁讓我們在能在廣大的網路世界做交流。
+              br
+              | 本課程由淺入深，先介紹基本的程式邏輯，再學習網頁最重要的三要素：HTML、CSS、JavaScript。並藉由此課程來簡單介紹程式語言的奧妙。
+              ul
+                li HTML: 標籤語言，網頁的骨架
+                li CSS: 樣式語言，網頁的外衣
+                li JavaScript: 程式語言，網頁的靈魂
+            p 我們將帶大家學習HTML的基礎，再搭配CSS、JavaScript讓整個網頁更加繽紛。一步步做出簡單版的OOXX井字遊戲呦！
+
   #noData.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', data-backdrop="true")
     .modal-dialog(role='document')
       .modal-content
